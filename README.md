@@ -1,2 +1,1 @@
-# Dive into deeplearning 
-### Recommender system (pytorch.ver)
+# Dive into deeplearning - RecSys (PyTorch.ver)
