@@ -2,12 +2,11 @@ import torch
 import torch.nn as nn
 
 class HingeLossbRec(nn.Module):
-    def __init__(self, weight=None, batch_axis=0, **kwargs):
-        super(HingeLossbRec, self).__init__(weight=None, batch_axis=0,
-                                            **kwargs)
+    def __init__(self, **kwargs):
+        super(HingeLossbRec, self).__init__(**kwargs)
 
     def forward(self, positive, negative, margin=1):
-        loss = nn.MultiMarginLoss()
+        loss = nn.HingeEmbeddingLoss(margin = margin)
         return loss(positive, negative)
 
 class BPRLoss(nn.Module):
