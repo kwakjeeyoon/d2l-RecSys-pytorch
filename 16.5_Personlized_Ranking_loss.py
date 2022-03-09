@@ -2,6 +2,9 @@ import torch
 import torch.nn as nn
 
 class HingeLossbRec(nn.Module):
+    '''
+    https://pytorch.org/docs/stable/generated/torch.nn.HingeEmbeddingLoss.html
+    '''
     def __init__(self, **kwargs):
         super(HingeLossbRec, self).__init__(**kwargs)
 
