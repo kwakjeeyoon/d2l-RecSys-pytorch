@@ -6,8 +6,7 @@ class HingeLossbRec(nn.Module):
         super(HingeLossbRec, self).__init__(weight=None, batch_axis=0,
                                             **kwargs)
 
-    def forward(self, positive, negative, m
-    argin=1):
+    def forward(self, positive, negative, margin=1):
         loss = nn.MultiMarginLoss()
         return loss(positive, negative)
 
