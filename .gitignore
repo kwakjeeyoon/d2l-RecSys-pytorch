@@ -1,2 +1,10 @@
+# data file
 *.zip
 ml-100k
+
+# apple
+.DS_Store
+
+# model
+model
+ncf_model
