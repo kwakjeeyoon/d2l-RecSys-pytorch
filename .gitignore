@@ -6,5 +6,7 @@ ml-100k
 .DS_Store
 
 # model
-model/
-ncf_model/
+model
+ncf_model
+
+**/__pycache__/
