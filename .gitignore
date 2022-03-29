@@ -10,3 +10,6 @@ model
 ncf_model
 
 **/__pycache__/
+
+# image
+.png
